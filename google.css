@@ -1,0 +1,176 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+nav main footer {
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    color: #202124;
+}
+
+a {
+    text-decoration: none;
+    color:#202124;
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+}
+
+a :hover{
+    text-decoration: underline;
+}
+
+
+
+#nav {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail images apps user";
+}
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+    padding: 5px;
+}
+
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+   
+}
+
+#apps{
+    grid-area: apps;
+    justify-self: center;
+    align-self: center;
+}
+
+#user {
+    grid-area: user;
+    justify-self: center;
+    align-self: center; 
+}
+
+
+#main {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 582px 1fr;
+    grid-template-rows: 131px 80px 250px;
+    grid-template-areas: 
+    ". google-logo ."
+    ". search-bar ."
+    ". flexbox .";
+}
+
+#google-logo {
+    grid-area: google-logo;
+    justify-self: center;
+    align-self: end;
+    height: 92px;
+    width: 272px;
+}
+
+#search-bar {
+    grid-area: search-bar;
+    justify-self: center;
+    align-self: center;
+    height: 42px;
+    width: 582px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    margin-top: 13px;
+}
+
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: baseline;
+    margin-top: 20px;
+}
+
+#google-search-btn {
+    padding: 10px 5px 5px 10px;
+    margin: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+}
+
+#lucky-search-btn {
+    padding: 10px 5px 5px 10px;
+    margin: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 160px 1fr 100px 100px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas: "advertising business how-search carbon privacy terms settings";
+}
+
+#advertising{
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+}
+
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+
+#how-search {
+    grid-area: how-search;
+    justify-self: center;
+    align-self: center;
+}
+
+#carbon {
+    grid-area: carbon;
+    justify-self: center;
+    align-self: center;
+    padding-right: 20px;
+}
+
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+}
+
